@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../projet.css" />
+    <title>Nombre Caché</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/nombreCache.js"></script>
+    <style>
+      .cache {
+        display:none;
+      }
+      body {
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+      #message {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: bolder;
+      }
+      .gagne {
+        color: green;
+      }
+      .perdu {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+        <!-- NAVIGATION BAR-->
+        <nav>
+          <ul class="barre">
+              <div href="index.html" >			
+                  <a href="../index.html" class="logonav"><img id=hover src="../icons/logo.png" alt="logo"></a>
+              </div>
+              <div class="droite">
+                  <li><a href="../projet.html">Accueil</a></li>
+                  <li><a href ="../autrepage.html">Chercher</a></li>
+                  <li><a href="../autrepage.html">Se connecter</a></li>
+                  <li><a href ="../autrepage.html">Panier</a></li>
+              </div>  
+              
+          </ul>
+      </nav>
+
+    <br><br><br><br><br>
+    <p>Trouvez le nombre caché entre 0 et 100<br> en 10 essais maximum</p>
+    <label for="prop">votre proposition : </label>
+    <input type="text" id="prop" name="proposition" value="" /><br />
+    <div id="message">   
+    </div>
+    <div id="partieEncours">
+      <button id="jouerBtn">Jouer</button> 
+      <button id="finPartieBtn">Abandonner</button>
+    </div>
+    <div id="partieTerminee" class="cache">
+      <button id="debutPartieBtn">Nouvelle Partie</button>
+    </div>
+
+<br><br><br>
+
+</body>
+
+<script>//highlight le logo de la barre de navigation quand on hover
+  const hover = document.getElementById("hover");
+  hover.onmouseover = function(){
+  this.src = "../icons/logohover.png"; };
+  hover.onmouseout = function(){
+  this.src = '../icons/logo.png'; };
+</script>
+</html>

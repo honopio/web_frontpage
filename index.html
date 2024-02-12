@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="projet.css" />
+    <title>accueil</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR-->
+    <nav>
+        <ul class="barre">
+            <div href="index.html" >			
+                <a href="index.html" class="logonav"><img id=hover src="icons/logo.png" alt="logo"></a>
+            </div>
+            <div class="droite">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href ="other_page.html">Chercher</a></li>
+                <li><a href="other_page.html">Se connecter</a></li>
+                <li><a href ="other_page.html">Panier</a></li>
+            </div>  
+            
+        </ul>
+    </nav>
+
+    <main>
+     <a id ="top"></a>
+    <!-- BANNER -->
+        <header class="banner">
+            <img src="media/banner.png" alt="banner">
+            <!-- Contenu au centre de la bannière-->
+            <div class="banner_content">
+                <h1>Winter Sales</h1>
+                <a class="button" href="other_page.html"><button>Nouveautés</button></a>
+                <a class="button" href="#promos"><button>Soldes</button></a>
+            </div>
+           
+        </header>
+
+
+    <!-- LES PRODUITS -->
+    <section class="produit-section">
+        <div class="produit-container">
+        
+            <div class="produit" id="produit1">
+                <img src="icons/consoles.png" alt="Consoles">
+                 <!-- menus déroulants des produits-->
+                <div class="dropdown">
+                    <button class="button dropbtn">Consoles</button>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="icons/playstation.png" class="menu-logo" alt=""> <span> PS5</span></a>
+                        <a href="#"><img src="icons/xbox.png" class="menu-logo" alt=""> <span> XBOX</span></a>
+                        <a href="#"><img src="icons/switch.png" class="menu-logo" alt=""> <span> Switch</span></a>
+                    </div>
+                </div>               
+            </div>
+            
+    
+        <div class="produit" id="produit2">
+        <img src="icons/jeux vidéos.png" alt="Jeux Vidéos">
+        <div class="dropdown">
+            <button class="button dropbtn">Jeux</button>
+            <div class="dropdown-content">
+                <a href="#"><img src="icons/playstation.png" class="menu-logo" alt=""><span> PS5</span></a>  
+                <a href="#"><img src="icons/xbox.png" class="menu-logo" alt=""><span> XBOX</span></a>
+                <a href="#"><img src="icons/switch.png" class="menu-logo" alt=""><span> Switch</span></a>
+            </div>
+        </div>
+    </div>
+
+        <div class="produit" id="produit3">
+            <img src="icons/goodies.PNG" alt="Goodies">
+            <div class="dropdown">
+                <button class="button dropbtn">Goodies</button>
+                <div class="dropdown-content">
+                    <a href="#"><img src="icons/figurine.png" class="menu-logo" alt=""><span>Figurines</span></a>
+                    <a href="#"><img src="icons/mug.png" class="menu-logo" alt=""><span> Mugs</span></a>
+                    <a href="#"><img src="icons/vetement.png" class="menu-logo" alt=""><span> Vetements</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="produit" id="produit4">
+        <img src="icons/accessoire.PNG" alt="Accessoires">
+        <div class="dropdown">
+            <button class="button dropbtn">Accessoires</button>
+            <div class="dropdown-content">
+                <a href="#"><img src="icons/controller.png" class="menu-logo" alt=""><span> Accessoires</span></a>
+
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- LES OFFRES SPECIALES -->
+<a id ="promos"></a>
+<section class="offres_speciales">
+    <div class="offers-wrapper">
+        
+        <div class="item-offre">
+            <p>-30% sur Zelda: Tears of the Kingdom</p>
+            <div class="game-container">
+                <img id="game-image" src="media/zelda.jpg" alt="Zelda">
+                <video id="game-video" src="media/video.mp4" loop muted style="display: none;"></video>
+            </div>   
+        </div>
+
+        <div class="item-offre">
+            <p>Offre d'hiver : -20%</p>
+            <a href="https://direct.playstation.com/fr-fr/buy-consoles/playstation5-digital-edition-console" target="_blank"><img class="ps5" src="media/playstation5test.jpg" alt="PlayStation"></a>
+        
+        </div>
+
+    </div>
+</section>
+
+<!-- AVANTAGES -->
+    <div class="avantages">
+        <div class="block">
+            <img src="icons/warranty.png" alt="image1">
+            <h2>Garantie 24 mois</h2>
+            <p>Pour toute console neuve, obtenez une garantie de 1 an supplémentaire après la garantie légale de conformité.</p>
+        </div>
+        <div class="block">
+            <img src="icons/free_shipping.png" alt="image1">
+            <h2>Livraison gratuite</h2>
+            <p>Profitez de la livraison gratuite pour tout achat supérieur à 50€</p>
+        </div>
+        <div class="block">
+            <img src="icons/freereturn.png" alt="image1">
+            <h2>Retours gratuits</h2>
+            <p>Si vos articles ne vous conviennent pas, vous pouvez les retourner gratuitement sous 28 jours</p>
+        </div>
+    </div>
+    
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+    
+            <div class="footersection footer_gauche">
+                <h2>contact</h2>
+                <div class="Contact">
+                    <div class="contact-item">
+                        <a href="mailto:xxxxxxx@xxx.com"> <img src="icons/mail.png" alt="mail "> </a>
+                        <span><a href="mailto:xxxxxxx@xxx.com">xxxxxxx@xxx.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/phone.png" alt="téléphone :"><span><br>04XXXXXXXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/location.png" alt="adresse :"><span><br>8 rue Stalingrad<br>38000 Grenoble<br>France</span>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="footersection footer_centre">
+                
+                <ul>
+                    <h2>aide</h2>
+                    <li><a href="autrepage.html">Questions fréquentes</a></li>
+                    <li><a href="autrepage.html">Suivi de commande</a></li>
+                    <li><a href="autrepage.html">Livraisons et retours</a></li>
+                </ul>
+            </div>
+
+            <div class="footersection footer_droite">
+                <h2>retrouvez-nous</h2>
+                    <div class="reseaux">
+                        <a href="https://www.instagram.com" target="_blank" class="logo">
+                            <img src="icons/insta.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="logo">
+                            <img src="icons/X.png" alt="Twitter">
+                        </a>
+                        <a href="https://discord.gg/xQvPCra3WZ " target="_blank"  class="logo">
+                            <img src="icons/discord.png" alt="Discord">
+                        </a>
+                    </div>
+                    <div class="jeu">
+                        <a href ="./nombreCache/nombreCache.html"><img src="icons/loadgame.png"></a>
+                    </div>
+            </div>    
+    </footer>
+
+ <span class="top"><a href="#top"><img src="icons/top.png" alt="retour en haut"></a></span>
+
+    </main>
+
+</body>
+<script>//highlight le logo de la barre de navigation quand on hover
+    const hover = document.getElementById("hover");
+    hover.onmouseover = function() {
+        this.src = "icons/logohover.png"; };
+    hover.onmouseout = function() {
+        this.src = 'icons/logo.png'; };
+</script>
+
+
+<script> //script de la vidéo zelda
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Fonction pour montrer la vidéo
+        document.getElementById('game-image').onmouseover = function() {
+            document.getElementById('game-video').style.display = 'block';
+            document.getElementById('game-image').style.display = 'none';
+            document.getElementById('game-video').play();
+        };
+    
+        // Fonction pour cacher la vidéo
+        document.getElementById('game-video').onmouseout = function() {
+            document.getElementById('game-video').style.display = 'none';
+            document.getElementById('game-image').style.display = 'block';
+            document.getElementById('game-video').pause();
+        };
+    });
+    
+        </script>
+    
+
+</html>

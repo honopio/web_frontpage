@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autre page</title>
+    <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+        <!-- NAVIGATION BAR-->
+        <nav>
+            <ul class="barre">
+                <div href="index.html" >			
+                    <a href="index.html" class="logonav"><img id=hover src="icons/logo.png" alt="logo"></a>
+                </div>
+                <div class="droite">
+                    <li><a href="index.html" id="actuel">Accueil</a></li>
+                    <li><a href ="other_page.html">Chercher</a></li>
+                    <li><a href="other_page.html">Se connecter</a></li>
+                    <li><a href ="other_page.html">Panier</a></li>
+                </div>  
+                
+            </ul>
+        </nav>
+
+
+    <br><br><br><br><br><br><br><br>
+    <div style="text-align:center;"><a class="exit" href="index.html"><img id="goBackImage" style="width: 20%;" src="icons/go_back.png"></a></div>
+   
+</body>
+
+<script> /*highlight le logo de la navbar quand on hover */
+    const logo = document.getElementById("hover");
+    logo.onmouseover = function() {
+        this.src = "icons/logohover.png"; 
+    };
+    logo.onmouseout = function() {
+        this.src = 'icons/logo.png'; 
+    };
+
+    /*highlight l'image pour revenir a la page principale quand on hover */
+    const goBackImage = document.getElementById("goBackImage");
+        goBackImage.onmouseover = function() {
+            this.src = "icons/go_back_hover.png";
+        };
+        goBackImage.onmouseout = function() {
+            this.src = 'icons/go_back.png';
+        };
+    
+</script>
+</html>

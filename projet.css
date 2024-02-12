@@ -1,0 +1,407 @@
+:root { /*codes couleurs */
+    --couleur-0 :#EAF2F8;
+    --couleur-1 : #9DB0DA;
+}
+body { 
+    margin : 0;
+    font-family: FreeMono, monospace;
+}
+h2 {
+    font-family: FreeMono, monospace;
+    font-size :x-large;
+    margin-bottom: 30px; 
+}
+/* BARRE DE NAVIGATION*/
+.barre {
+    font-family: FreeMono, monospace;
+    text-align: end;
+    position : fixed;
+    padding: 15px 0;
+    background-color: white;
+    margin-top : 0; /*sinon ça met une marge en haut*/
+    max-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+    width:100%;
+    z-index: 2; 
+
+}
+
+.droite > li {
+    display: inline;
+    list-style : none;
+    margin :0px;
+    height: 100%;
+    width:fit-content;
+    text-align: center;
+    white-space : nowrap; /*pour toujours afficher en une ligne*/
+}
+.logonav img {
+    float: left;
+    height : auto;
+    max-height: 50px;
+    margin-left : 10px;
+    }
+/* pour la partie droite de la navbar */
+.droite {
+    display : flex;
+    align-items : center;
+}
+.droite > li > a {
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    padding:20px;
+}
+.droite > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+
+}
+/* BANNIERE */
+.banner > img {
+width: 100%;
+height : auto;
+display: block;
+}
+.banner {
+    position : relative;
+    top:50px;
+    width : 100%;
+    overflow : hidden; 
+    padding-top : 10px;
+    margin-bottom: 50px; 
+}
+.banner_content > h1 {
+
+    font-size : 7vw;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    color: var(--couleur-0);
+    text-shadow: black 0px 0px 7px; /* color offset-x offset-y blur-radius */
+    font-family: FreeMono, monospace;
+}
+.banner_content {
+    position : absolute;
+    top:50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+     text-align: center!important;
+    color: white;
+    width: 100%;
+    
+    box-sizing: border-box; /*la largeur inclut le padding */
+    padding: 20px; 
+    z-index: 1; /*contenu au-dessus de l'image */
+
+}
+
+
+button { /* boutons de la bannière et des produits */
+    background-color: var(--couleur-0);
+    color:black;
+    padding : 10px 20px;
+    cursor:pointer;
+    margin : 20px;
+    font-family: FreeMono, monospace;
+    border-radius: 10px;
+    font-size: large;
+    transition: transform 0.2s ease-out;
+    
+}
+button:hover {
+    transform: scale(1.07);
+    background-color:var(--couleur-1)!important;
+}
+
+/* LES AVANTAGES */
+.block {
+    margin-top: 30px;
+    width : 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.block img {
+   max-width: 30%;
+   min-width: 100px;
+    height : auto;
+    
+}
+.block p {
+    padding-left : 20px;
+    padding-right : 20px;
+}  
+.block h2 {
+    margin-top : 20px;
+    color : black;
+    padding-left: 10px;
+    padding-right : 10px;
+}
+.avantages {
+    margin-top: 100px;
+   background-color: #EAF2F8;
+    width : 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/* LES PRODUITS */
+.produit-section {
+    text-align: center;
+    padding: 20px;
+    background-color: white; 
+    margin-bottom: 100px;
+    margin-top: 100px;
+    white-space : nowrap;
+}
+.produit-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.produit img {
+    max-width: 150px; 
+   min-width: 50px;
+    margin-bottom: 20px; 
+
+}
+
+.produit-caption {
+    font-size: 2em; 
+    color:black; 
+}
+
+/* PRODUITS -> MENU DEROULANT */ 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    background-color: var(--couleur-0);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    border-radius: 5%;
+
+}
+.menu-logo {
+    height: 25px; 
+    width : 25px; 
+    margin-top : 12px;
+    object-fit: contain;
+}
+.dropdown-content a:hover {
+    background-color:var(--couleur-1);
+    border-radius: 5%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#D6EAF8;
+    transform: scale(1.07);
+    transition: transform 0.2s ease-out;
+}
+
+.dropdown-content a {    /*dans le menu déroulant */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.alaide {
+    flex-grow: 1!important;
+}
+
+/* OFFRES SPECIALES */
+.offres_speciales {
+    background-color:var(--couleur-1); /*fond bleu foncé */
+    padding: 20px; 
+    color: white; 
+    border-radius: 10px;
+    margin-left : 3%;
+    margin-right : 3%
+}
+
+.offers-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.item-offre {
+    width: calc(50% - 10px); 
+    margin: 5px; 
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.item-offre h3 {
+    margin-bottom: 0.5em; 
+}
+
+.item-offre img {
+    max-width: 100%; 
+    height: auto; 
+}
+.item-offre .ps5 {
+    border-radius: 5%;
+    width : 90%;
+}
+
+.item-offre p {
+    margin-top: 0.5em; 
+}
+
+.game-container {
+    position: relative;
+    width: 100%; 
+    height: 60%; 
+    cursor: pointer; 
+}
+
+#game-image, #game-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    width: 100%;
+    padding: 0px 10%; 
+   margin : 20px 0px;
+
+}
+.logo img { /*logos du footer. le logo de la navbar est dans .logonav */
+    width: 60px;
+    text-align: left;
+   margin : 8px;
+   padding-left: 10px;
+}
+.footersection {
+    display: inline-block;
+    vertical-align: top;
+    width:30%;
+}
+
+.footer_centre {
+    vertical-align: top;
+    width: 30%;
+}
+.footer_centre ul {
+    list-style: none;
+}
+.footer_centre li {
+    margin-bottom: 10px;
+    overflow: hidden; /* Cacher le texte qui dépasse */
+    text-overflow: ellipsis; /* mettre "..." si le texte est coupé */
+}
+
+.footer_centre a {
+    color: black;
+    text-decoration: none;
+
+}
+.footer_centre a:hover {
+    text-decoration: underline;
+}
+
+.footer_droite {
+    float: right;
+}
+.contact {
+    text-align: left;
+}
+.contact-item img {
+    float: left ;
+    height : auto;
+    width : 30px ; 
+    margin-right : 10px;
+    padding-top:15px;
+
+    clear : both;
+}
+.contact-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.contact-item span {
+    padding-left: 10px;
+    display: block;
+    white-space: nowrap; /* le texte passe pas à la ligne */
+    overflow: hidden; /* Cacher le texte qui dépasse */
+    text-overflow: ellipsis;
+
+
+}
+.contact-item span a {
+    text-decoration: none;
+    color : black;
+    
+}
+
+.reseaux {
+    display : flex;
+    margin-bottom: 20px;
+}
+.reseaux a {
+    display: inline-block;
+    margin-right: 4vw; 
+}
+
+.reseaux img {
+    height: auto;
+    width: 50px;
+    margin-left: 0;
+    padding-left : 0;
+}
+
+
+.jeu > a {
+    text-decoration: none;
+}
+.jeu > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+.jeu  img {
+    width: 100%;
+}
+
+.top img{
+    position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 3; /* Make sure it does not overlap */
+  width : 40px;
+}
+
